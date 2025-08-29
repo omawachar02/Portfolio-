@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Development Roadmap</title>
+    <link rel="stylesheet" href="rdmp.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            padding: 2rem;
+        }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .progress-fill {
+            background: #3b82f6;
+            height: 100%;
+            width: 0;
+            transition: width 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .roadmap-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="min-h-screen bg-gray-100 py-8 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Frontend Development Roadmap</h1>
+                <div class="roadmap-grid">
+                    <!-- HTML Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">HTML</h2>
+                        <p class="text-gray-600 mb-4">The foundation of web development</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                    </div>
+
+                    <!-- CSS Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">CSS</h2>
+                        <p class="text-gray-600 mb-4">Styling and layout</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">Requires: HTML</div>
+                    </div>
+
+                    <!-- JavaScript Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">JavaScript</h2>
+                        <p class="text-gray-600 mb-4">Programming for the web</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">Requires: HTML, CSS</div>
+                    </div>
+
+                    <!-- React Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">React.js</h2>
+                        <p class="text-gray-600 mb-4">UI component library</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">Requires: JavaScript</div>
+                    </div>
+
+                    <!-- Bootstrap Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Bootstrap</h2>
+                        <p class="text-gray-600 mb-4">CSS framework</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">Requires: HTML, CSS</div>
+                    </div>
+
+                    <!-- Tailwind CSS Card -->
+                    <div class="tech-card">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Tailwind CSS</h2>
+                        <p class="text-gray-600 mb-4">Utility-first CSS framework</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%;">
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600 mt-1">0% Complete</div>
+                        <div class="mt-4">
+                            <button class="text-blue-500 hover:text-blue-600 font-medium focus:outline-none">Show
+                                Details</button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">Requires: HTML, CSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
