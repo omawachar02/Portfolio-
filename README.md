@@ -1,2 +1,3 @@
 # Portfolio-
 This is portfolio web page....
+This is a simple portfolio project made up with HTML and CSS only.
